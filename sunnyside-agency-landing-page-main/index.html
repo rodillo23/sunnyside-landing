@@ -13,10 +13,20 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
+
     <header class="header hero">
       <div class="navegacion">
         <img src="./images/logo.svg" alt="logo" />
-        <img src="./images/icon-hamburger.svg" alt="menu" />
+        <nav class="menu hide">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="menu-contact">Contact</a></li>
+          </ul>
+        </nav>
+        <img id="hamburger" src="./images/icon-hamburger.svg" alt="menu" />
+
       </div>
 
       <div class="hero-content">
@@ -25,12 +35,12 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="about">
       <article class="height-500 image-one">
         
       </article>
 
-      <article class="height-600 information">
+      <article class="height-600 information first">
         <h2>Transform your brand</h2>
         <p>
           We are a full-service creative agency specializing in helping brands
@@ -51,18 +61,18 @@
         <a class="border-pink" href="#">Learn more</a>
       </article>
 
-      <article class="height-700 image-three">
+      <article class="height-800 image-three">
         <h2>Graphic Design</h2>
         <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
       </article>
 
-      <article class="height-700 image-four">
+      <article class="height-800 image-four">
         <h2>Photography</h2>
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </article>
     </main>
 
-    <section class="testimonials">
+    <section class="testimonials" id="services">
       <h3>Client testimonials</h3>
       <div class="testimonials-container">
         
@@ -74,14 +84,14 @@
         </div>
 
         <div class="testimonial">
-          <img src="./images/image-thomas.jpg" alt="emily">
+          <img src="./images/image-thomas.jpg" alt="thomas">
           <p class="testimonial-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
           <p class="testimonial-name">Thomas S.</p>
           <p class="testimonial-position">Chief Operating Officer</p>
         </div>
 
         <div class="testimonial">
-          <img src="./images/image-jennie.jpg" alt="emily">
+          <img src="./images/image-jennie.jpg" alt="jennie">
           <p class="testimonial-text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
           <p class="testimonial-name">Jennie F.</p>
           <p class="testimonial-position">Business Owner</p>
@@ -89,54 +99,67 @@
       </div>
     </section>
 
-    <div class="images-container">
+    <div class="images-container" id="projects">
+      
       <div class="image-container">
-        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="">
+        <img class="one" src="./images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles">
       </div>
 
       <div class="image-container">
-        <img src="./images/mobile/image-gallery-orange.jpg" alt="">
+        <img class="two" src="./images/mobile/image-gallery-orange.jpg" alt="orange">
       </div>
 
       <div class="image-container">
-        <img src="./images/mobile/image-gallery-cone.jpg" alt="">
+        <img class="three" src="./images/mobile/image-gallery-cone.jpg" alt="cone">
       </div>
 
       <div class="image-container">
-        <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        <img class="four" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
       </div>
     </div>
 
-    <footer class="footer">
-      <img src="./images/logo-footer.svg" alt="">
+    <footer class="footer" id="contact">
+      <img src="./images/logo-footer.svg" alt="logo">
+      
       <ul class="footer-navigation">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
 
       <ul class="footer-social">
-        <li><a href="#"><img src="./images/icon-facebook.svg" alt=""></a></li>
-        <li><a href="#"><img src="./images/icon-instagram.svg" alt=""></a></li>
-        <li><a href="#"><img src="./images/icon-twitter.svg" alt=""></a></li>
-        <li><a href="#"><img src="./images/icon-pinterest.svg" alt=""></a></li>
+
+        <li>
+          <a href="#">
+            <img src="./images/icon-facebook.svg" alt="facebook" class="facebook">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="./images/icon-instagram.svg" alt="instagram" class="instagram">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="./images/icon-twitter.svg" alt="twitter" class="twitter">
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <img src="./images/icon-pinterest.svg" alt="pinterest" class="pinterest">
+          </a>
+        </li>
       </ul>
     </footer>
 
-    <!--About
-  Services
-  Projects
-  Contact
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Rodolfo Figueroa</a>.
+    </div>
 
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
--->
+    <script src="./index.js"></script>
   </body>
 </html>
