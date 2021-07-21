@@ -128,7 +128,7 @@ h2{
 
 .hero-content h1{
   color: var(--white);
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: .2em;
   margin-bottom: 2em;
   max-width: 90%;
@@ -403,6 +403,10 @@ h2{
 
   .hero{
     background-image: url('../images/desktop/image-header.jpg');
+  }
+
+  .hero-content h1{
+    font-size: 3rem;
   }
 
   .main{
